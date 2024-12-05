@@ -23,7 +23,8 @@ from django_swagger_utils.drf_server.utils.general.import_app_settings import \
 
 THIRD_PARTY_APPS = []
 APPS = [
-    "rest_app",
+    "polls_app",
+    "rest_app"
 ]
 
 INSTALLED_APPS += THIRD_PARTY_APPS
@@ -69,6 +70,7 @@ SWAGGER_UTILS = {
     },
     "APPS": {
         "rest_app": {"dsu_version": "1.0"},
+        "polls_app": {"dsu_version": "1.0"},
     },
     "HOST": os.environ.get('APIGATEWAY_ENDPOINT', '127.0.0.1:8000'),
 }

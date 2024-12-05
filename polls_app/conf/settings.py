@@ -1,0 +1,1 @@
+# write your polls_app settings
